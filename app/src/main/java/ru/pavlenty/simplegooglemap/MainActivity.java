@@ -23,6 +23,15 @@ public class MainActivity extends AppCompatActivity  implements OnMapReadyCallba
 
     @Override
     public void onMapReady(GoogleMap map) {
-        map.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        LatLng Moscow = new LatLng(55.6008447, 37.0262533);
+        LatLng SaintPetersburg = new LatLng(59.9370369, 28.973827);
+        LatLng Sydney = new LatLng(-34, 151);
+        LatLng NewYork = new LatLng(40.6976701, -74.2598609);
+        LatLng Cairo = new LatLng(30.0596185, 31.1884245);
+        map.addMarker(new MarkerOptions().position(Moscow).title("Moscow"));
+        map.addMarker(new MarkerOptions().position(Sydney).title("Sydney"));
+        map.addMarker(new MarkerOptions().position(SaintPetersburg).title("Saint Petersburg"));
+        map.addMarker(new MarkerOptions().position(NewYork).title("New York"));
+        map.addMarker(new MarkerOptions().position(Cairo).title("Cairo"));
     }
 }
